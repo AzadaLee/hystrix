@@ -20,6 +20,7 @@ public class HelloService {
 		Map<String, Object> params = new HashMap<String, Object>();
 		params.put("req1", "val1");
 		params.put("req2", "val2");
+		
 		Map<String, Object> result = restTemplate.postForObject("http://producter/test/hello", params, Map.class);
 		return result;
 	}
